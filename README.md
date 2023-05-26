@@ -1,9 +1,9 @@
-# **Vintage Cocktails Quiz**
+# **Bartending Quiz**
 
 ## **Contents**
 
 ## **Scope**
-The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. Users can to test their knowledge of classic Cocktails by playing an online quiz. The features include creating a username, tracking the score and a countdown timer. 
+The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. Users can to test their knowledge of Bartending by playing an online quiz. The features include creating a username, tracking the score and a countdown timer. 
 
 ## **UX (User Experience)**
 
@@ -23,24 +23,25 @@ The Scope of this project is creating a website with the HTML,CSS and JavaScript
     - I want the site to be easy to navigate on mobile primarily so I can complete it on the go.
     - I want to be able to enter a username of my choice. 
     - I want to see the remaining time.* 
-    - I want to put my cocktail knowledge to test with help of multiple choice.
-    - I also want to be able to contact the site owner with feedback* 
+    - I want to put my bartending knowledge to be tested with help of multiple choice.
+    - I want to be able to contact the site owner with feedback* 
 
 ### **Site Owner Goals** 
-- As a site owner I want to educate users on  cocktails 
+- As a site owner I want to test and educate users on Bartending. 
 - As a site owner I want the site to be easy to navigate so that people will not only return but also share with friends.
 
 ## **Design Choices**
-
-
 ### **Fonts**
+
 ### **Colours**
 ### **Imagery**
 
 ### **Wireframes**
 The wireframes were created using [Figma](https://www.figma.com) and can be found in pdf form in [wireframes](documentation/wireframes)
 
-- Desktop view
-    - [Home](documentation/wireframes/home.PNG)
-    - [Game Play](documentation/wireframes/game.page.PNG)
-    - [Results](documentation/wireframes/results.page.PNG)
+- Mobile view
+    - [Home](documentation/wireframes/mobile.home.PNG)
+    - [Username](documentation/wireframes/mobile.username.PNG)
+    - [Game Play](documentation/wireframes/mobile.game.PNG)
+    - [Results](documentation/wireframes/mobile.results.PNG)
+    - [Leaderboard](documentation/wireframes/mobile.leaderboard.PNG)
