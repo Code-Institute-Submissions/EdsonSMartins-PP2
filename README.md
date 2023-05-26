@@ -32,7 +32,7 @@ The Scope of this project is creating a website with the HTML,CSS and JavaScript
 
 ## **Design Choices**
 ### **Fonts**
-
+The Fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and [Lobster](https://fonts.google.com/specimen/Lobster). I have selected Lobster mainly for headlines as it brings an elegant and vintage element that is certainly related to the art of bartending. Open Sans is a perfect match as it is readable, dislexia friendly and also brings an element of versatility which is a very important bartending caracheristic. 
 ### **Colours**
 ### **Imagery**
 
