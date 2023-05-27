@@ -56,18 +56,29 @@ The Fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and 
 [Back to contents](#contents)
 
 ### **Colours**
-The idea behind the [Color Palette](documentation/color.palette.png) was to use the very classic art decor reference connected to wood and gold elements such as wood barrels and golden shakers.
+The idea behind the colours was to use the very classic art decor reference connected to wood and gold elements such as wood barrels and orange golden shakers and utensils behind the bar.
+
+![Colour Palette](documentation/color.palette.png)
+
+Check format:[Colour Palette](https://coolors.co/f2ab69-772f1a)
 
 [Back to contents](#contents)
 
 ### **Wireframes**
 The wireframes were created using [Figma](https://www.figma.com) and can be found in pdf form in [wireframes](documentation/wireframes)
 - Mobile view
-    - [Home](documentation/wireframes/mobile.home.PNG)
-    - [Username](documentation/wireframes/mobile.username.PNG)
-    - [Game Play](documentation/wireframes/mobile.game.PNG)
-    - [Results](documentation/wireframes/mobile.results.PNG)
-    - [Leaderboard](documentation/wireframes/mobile.leaderboard.PNG)
+    - [Home](documentation/wireframes/home_mobile.PNG)
+    - [Username](documentation/wireframes/username_mobile.PNG)
+    - [Game Play](documentation/wireframes/game_mobile.PNG)
+    - [Results](documentation/wireframes/results_mobile.PNG)
+    - [Leaderboard](documentation/wireframes/leaderboard_mobile.PNG)
+    - [Help](documentation/wireframes/help_mobile.PNG)
 - Desktop view
+    - [Home](documentation/wireframes/home_desktop.PNG)
+    - [Username](documentation/wireframes/username_desktop.PNG)
+    - [Game Play](documentation/wireframes/game_desktop.PNG)
+    - [Results](documentation/wireframes/results_desktop.PNG)
+    - [Leaderboard](documentation/wireframes/leaderboard_desktop.PNG)
+    - [Help](documentation/wireframes/help_desktop.PNG)
 
 [Back to contents](#contents)
