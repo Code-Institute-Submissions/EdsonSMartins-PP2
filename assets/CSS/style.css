@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;500&display=swap');
+
 body {
         font-family: 'Open Sans',
             serif;
@@ -20,7 +22,7 @@ body {
 .navbar-brand
 {
   font-family: 'Lobster', sans-serif;
-  font-size: 30px!important;
+  font-size: 35px!important;
   margin: 0px;
 }
 
