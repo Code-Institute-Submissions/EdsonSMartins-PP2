@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;500&display=swap');
 
 body {
-        font-family: 'Open Sans',
+          font-family: 'Open Sans',
             serif;
         font-weight: 400;
         overflow-x: hidden;
@@ -17,6 +17,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    background-color: black;
 }
 
 .navbar-brand
@@ -26,3 +27,14 @@ body {
   margin: 0px;
 }
 
+/* -------------------Modal-------------------  */
+.modal-header {
+  padding: 3rem 5rem;  
+}
+.modal-title,
+.contact-header {
+    font-family: 'Lobster', serif;
+    font-weight: 800;
+    text-align: center;
+    padding-left: 44px;
+}
