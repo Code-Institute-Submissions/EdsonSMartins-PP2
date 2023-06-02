@@ -34,8 +34,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link" href="#">Play</a>
-          <a class="nav-link" href="#">Instructions</a>
+          <a class="nav-link" data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal">Play</a>
+          <a class="nav-link" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Instructions</a>
           <a class="nav-link" href="#">Leaderboard</a>           
         </div>
       </div>
@@ -48,7 +48,54 @@
       </div>
   </div>
 </section>
+<div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="modalLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header text-center">
+              <h2 class="modal-title help-title w-100" id="modalLabel2">Instructions</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2>How to play Bartending Quiz!</h2>
+            <ul>
+                <li>Firstly you will be asked to enter a username.Choose any name that you desire and secure your spot on the leader board</li>
+                <li>Press Play! and a timer will start. </li>
+                <li>You have <strong>50 seconds</strong> to choose which of the <strong>3</strong> 
+                    given options is the right answer to the question given. </li>
+                <li>Choose your answer by clicking on it!</li>                
+            </ul>           
+        </div>
+          <div class="modal-footer">
+              <a data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-light " class="btn btn-secondary play">PLAY</a>
+          </div>
+      </div>
+  </div>
+</div>
 
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal3">Please add your username!</h4>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name" required>
+          </div>          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="quiz.html" class="btn btn-secondary play align-items-center">Start Game!</a>                
+      </div>
+    </div>
+  </div>
+</div>
 
 
   </body>
