@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;500&display=swap');
 
 body {
-          font-family: 'Open Sans', serif;
+        font-family: 'Open Sans', serif;
         font-weight: 400;
         overflow-x: hidden;
         position: relative;
@@ -76,8 +76,66 @@ body {
 
 /* -------------------Game-------------------  */
 
-/*form section for username */
 
+.game {  
+  background: #f2ab69;
+  width: 90%;
+  max-width: 600px;
+  margin: 200px auto;
+  border-radius: 10px;
+  padding: 60px;
+}
+
+.game h1 {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+
+.options {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222 ;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.options:hover {
+  background: #222;
+  color: #fff;
+}
+
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
 
 
 
