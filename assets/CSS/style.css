@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;500&display=swap');
 
 body {
-          font-family: 'Open Sans',
-            serif;
+          font-family: 'Open Sans', serif;
         font-weight: 400;
         overflow-x: hidden;
         position: relative;
 }
 
-/* Main page  */
+
+
+/* -------------------Main page-------------------  */
 .hero{
     height: 100vh;
     width: 100vw;
@@ -44,8 +45,7 @@ body {
 }
 
 .modal-header {
-  padding: 0.5rem 0.5rem;
-  /* border-bottom: 1px solid; */
+  padding: 0.5rem 0.5rem; 
 }
 
 .modal-body {
@@ -61,6 +61,25 @@ body {
 .submit,
 .reset,
 .help {
-  font-family: 'IM Fell French Canon SC', serif;
-  font-size: 1.5em;
+  font-family: 'Open Sans', serif;
+  font-size: 1em;
 }
+
+.modal-footer {
+  justify-content: center;
+}
+
+/*class to hide or show sections and elements*/
+.hide {
+  display: none;
+}
+
+/* -------------------Game-------------------  */
+
+/*form section for username */
+
+
+
+
+
+
