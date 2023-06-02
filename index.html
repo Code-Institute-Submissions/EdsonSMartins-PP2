@@ -38,7 +38,7 @@
     </div>
   </nav>
   <!-- Bootstrap Modal -->
-  <div class="modal fade show" id="modalH1" tabindex="-1" aria-labelledby="modalH1Label" aria-modal="true" role="dialog" style="display: block;">
+  <div class="modal fade show" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-modal="true" role="dialog" style="display: block;">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header text-center">
@@ -49,11 +49,29 @@
                 <h4>A simple and fun Quiz Game for those who are interested in Bartending, Alcoholic drinks and cocktails.</h4>                                
             </div>
             <div class="modal-footer">
-                <a href="#" class="btn btn-secondary play align-items-center">PLAY</a>
-                <button data-bs-target="#modalH2" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-light help">Instructions</button>
+                <a onclick="showHide" class="btn btn-secondary play align-items-center">PLAY</a>
+                <button data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-light help">Instructions</button>
             </div>
         </div>
     </div>
+</div>
+<div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="modalLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header text-center">
+              <h2 class="modal-title help-title w-100" id="modalLabel2">Instructions</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>For evry question you will have 3 options to select but only one is correct;</p>
+            <p>Enter your username</p>
+            <p>Click play to start the game</p>            
+        </div>
+          <div class="modal-footer">
+              <a href="quiz.html" class="btn btn-secondary play">PLAY</a>
+          </div>
+      </div>
+  </div>
 </div>
 
   

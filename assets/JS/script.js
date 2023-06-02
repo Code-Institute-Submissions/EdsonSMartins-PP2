@@ -1,4 +1,4 @@
-const myModal = bootstrap.Modal('#home-modal')
+const myModal = bootstrap.Modal('#modalH1');
 
 window.addEventListener('DOMContentLoad', () => {
   myModal.show()
