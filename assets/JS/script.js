@@ -11,6 +11,9 @@ const questionElement = document.getElementById('questions');
 const allAnswers = document.getElementById('answer-buttons');
 const nextButton = document.querySelector('.next-btn');
 
+let currentQuestionIndex = 0;
+
+
 function startQuiz(){
 	currentQuestionIndex = 0;
 	score = 0;
