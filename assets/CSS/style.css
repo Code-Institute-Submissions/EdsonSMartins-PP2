@@ -5,6 +5,7 @@ body {
         font-weight: 400;
         overflow-x: hidden;
         position: relative;
+        background-size: cover;
 }
 
 
@@ -76,8 +77,8 @@ body {
 
 /* -------------------Game-------------------  */
 
-
-.game {  
+/* main areas styling */
+.game {
   background: #f2ab69;
   width: 90%;
   max-width: 600px;
@@ -86,30 +87,81 @@ body {
   padding: 60px;
 }
 
-.game h1 {
+.game-play,
+.results {
+    width: 600px;
+    max-width: 90%;
+    margin: 200px auto;
+    background-color: #f2ab69;
+    border-radius: 16px;
+    border: 1px solid #004E98;
+    position: relative;
+    text-align: center;
+}
+
+/* hides relevant areas depending on stage of quiz */
+.hide {
+    display: none;
+}
+
+
+.game h2 {
   font-size: 25px;
   color: black;
   font-weight: 600;
   border-bottom: 1px solid black;
   padding-bottom: 30px;
+  padding-top: 30px;
 
 }
 
-.quiz {
-  padding: 20px 0;
+.user-input {
+  padding: 10px 0; 
 }
 
-.quiz h2 {
-  font-size: 18px;
+/*enter button */
+#submit {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 400;
+  width: 80px;
+  border: 0;
+  padding: 10px;
+  margin: 15px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*main game section */
+.game-play {
+  text-align: center;
+  padding: 2rem;
+}
+
+#username-output {
+  font-size: 2rem;
+  padding: 5px;
   color: black;
-  font-weight: 600;
+}
+
+
+#errors {
+  color: black;
+  background-color: #f2ab69;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 1rem;
+  width: fit-content;
+  display: none;
 }
 
 .options {
   background: #fff;
   color: #222;
   font-weight: 500;
-  width: 100%;
+  width: 50%;
   border: 1px solid #222 ;
   padding: 10px;
   margin: 10px 0;
@@ -128,13 +180,12 @@ body {
   background: #001e4d;
   color: #fff;
   font-weight: 500;
-  width: 150px;
+  width: 100px;
   border: 0;
   padding: 10px;
   margin: 20px auto 0;
   border-radius: 4px;
-  cursor: pointer;
-  display: none;
+  cursor: pointer;  
 }
 
 
