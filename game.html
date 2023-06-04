@@ -78,18 +78,16 @@
         </div>
     </section>
 </main>
-    <!-- result section that shows final score -->
-    <section class="results">
-      <h2>Times Up!</h2>
-      <p id="result-message">
-          <!-- depending on how high the score was a message will apear using js -->
-      </p>
-      <br>
-      <p class="scores" id="right">Right Lyrics:<span id="score">0</span></p>
-      <p class="scores" id="wrong">Wrong Lyrics:<span id="incorrect">0</span></p>
-      <br>
-      <button id="home" onclick="locationReload()">Home</button>      
-    </section>
+    <!-- results area -->
+    <section class="results-area hide">
+      <header class="header-container">
+          <h1>Finish It!</h1>
+      </header>
+      <div id="finish">
+          <div id="end-result"></div>
+          <button aria-label="Return to home page" onclick="goToHome()" class="btn-home hover ">Home</button>
+      </div>
+  </section>
 
 
 <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="modalLabel2" tabindex="-1">

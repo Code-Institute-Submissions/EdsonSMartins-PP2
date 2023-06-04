@@ -1,37 +1,112 @@
+// DOM elements
+let quizArea = document.getElementsByClassName("game");
+let resultsArea = document.getElementsByClassName("results");
+let quizPhrase = document.getElementById("questions");
+let answerButtons = document.getElementById('answer-buttons');
+let currentPhraseIndex = 0;
+let userScore = 0;
+let score = document.getElementById("user-score");
 
-// variables
-
-const myModal = new bootstrap.Modal('#modal');
-
-const gameSection = document.querySelector(".game-play");
-const resultSection = document.querySelector(".result");
-
-//main game variables
-const questionElement = document.getElementById('questions');
-const allAnswers = document.getElementById('answer-buttons');
-const nextButton = document.querySelector('.next-btn');
-
-let currentQuestionIndex = 0;
-
-
-function startQuiz(){
-	currentQuestionIndex = 0;
-	score = 0;
-	nextButton.innerHTML = "Next";
-	showQuestion();
+// function to open quiz area
+function startQuiz() {
+    homeArea[0].classList.add("hide");
+    quizArea[0].classList.remove("hide");
+    currentPhraseIndex = 0;
+    showQuiz();
+    userScore = 0;
 }
 
-function showQuestion(){
-	let currentQuestion = questions[currentQuestionIndex];
-	let questionNo = currentQuestionIndex + 1;
-	questionElement.innerHTML = questionNo + "." + currentQuestion.question;
+let startButton = document.getElementById("start-btn");
+startButton.addEventListener("click", startQuiz)
 
-	currentQuestion.answers.forEach(answer => {
-		const button = document.createElement("button");
-		button.innerHTML = answer.text;
-		button.classList.add("btn");
-		answerButton.appendChild(button);
-	})
+// function to show quiz questions
+function showQuiz() {
+    // answer buttons were repeating so the reset function was added
+    resetAnswerButtons();
+    // displays question number
+    let currentPhrase = phrases[currentPhraseIndex];
+    let phraseNumber = currentPhraseIndex + 1;
+    quizPhrase.innerHTML = phraseNumber + " / 10 - " + currentPhrase.phrase;
+
+    currentPhrase.options.forEach(options => {
+        //this is to create the answer buttons and include the values
+        let button = document.createElement("button");
+        button.innerHTML = options.text;
+       button.classList.add("btn");
+       answerButtons.appendChild(button);
+       button.addEventListener("click", checkAnswer);
+       if (options.correct) {
+           button.dataset.correct = options.correct;
+       };
+    });
 }
 
-startQuiz();
+//This function removes the old blank buttons and replaces them with above 
+function resetAnswerButtons() {
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+// checks the answers value, adds class to correct and incorrect values
+// changes colour of answers to indicate correct/incorrect
+function checkAnswer(e) {
+    let clickedButton = e.target;
+    let correctOption = clickedButton.dataset.correct === "true";
+    if (correctOption) {
+        clickedButton.classList.add("correct-option");
+        incrementScore();
+    } else {
+        clickedButton.classList.add("incorrect-option");
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct-option");
+        }
+        //disables answer buttons
+        button.disabled = true;
+        button.classList.add("disabled");
+    });
+}
+
+// function to increment the score
+function incrementScore() {
+    userScore += 1;
+    score.innerText = `${userScore}`;
+}
+
+// repeats the show quiz function if there are questions left
+// if not, it returns the end page with final score
+function nextPhrase() {
+    currentPhraseIndex++;
+    if(currentPhraseIndex < 10){
+        showQuiz();
+    } else{
+        quizArea[0].classList.add("hide");
+        resultsArea[0].classList.remove("hide");
+        let endResult = document.getElementById("end-result");
+        let userName = document.getElementById("username");
+        let html = `
+        <p>Well done ${userName.value}! You got ${userScore} out of 10 right!
+        `;
+        endResult.innerHTML = html;
+    }
+}
+
+// moves on to the next question
+let nextButton = document.getElementById("next");
+nextButton.addEventListener("click", () => {
+    if(currentPhraseIndex < phrases.length){
+        nextPhrase();
+    } else {
+        startQuiz();
+    }
+});
+
+// returns user to home page
+function goToHome() {
+    homeArea[0].classList.remove("hide");
+    quizArea[0].classList.add("hide");
+    resultsArea[0].classList.add("hide");
+    score.innerHTML = 0;
+}
