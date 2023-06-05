@@ -42,19 +42,16 @@
     </div>
   </nav>
 <main>
-     <!-- form section for username -->
+     <!-- form section for username - quiz area -->
      <section class="game">
         <h2>Before you start...</h2>
             <div class="user-input">
                 <label for="username">Please enter a Username:</label> 
                 <br>
-                <input id="username" type="text" name="username"> 
+                <input aria-label="Enter username" type="text" name="username" id="username"
+                    placeholder="Username"> 
                 <br>
-                <div id="errors">
-                    <!-- error message will be displayed using js-->
-                </div>
-                <button type="button" id="submit" onclick="displayGame(); displayUsername(); hideGame()">Play</button> 
-                
+                <button aria-label="Start quiz" class="hover" id="start-btn">Start Quiz</button>                
             </div>
     </section>
      <!-- game section with the game -->

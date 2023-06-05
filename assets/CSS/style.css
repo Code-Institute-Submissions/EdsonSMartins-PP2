@@ -120,11 +120,11 @@ body {
 }
 
 /*enter button */
-#submit {
+#start-btn {
   background: #001e4d;
   color: #fff;
   font-weight: 400;
-  width: 80px;
+  width: 100px;
   border: 0;
   padding: 10px;
   margin: 15px auto 0;
