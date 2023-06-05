@@ -42,8 +42,8 @@
     </div>
   </nav>
 <main>
-     <!-- form section for username - quiz area -->
-     <section class="game">
+     <!-- form section for username -->
+     <section class="username-section">
         <h2>Before you start...</h2>
             <div class="user-input">
                 <label for="username">Please enter a Username:</label> 
@@ -56,23 +56,26 @@
     </section>
      <!-- game section with the game -->
   
-     <section class="game-play">        
+     <section class="game-play hide">        
         <div id="timer">
             <!-- the timer will be displayed using js -->
         </div> 
         <div>
-            <p id="questions">Questions here </p>
+          <div id="question-container">
+            <p id="question">Blah blah blank</p>
         </div>
-        <div id="answer-buttons" class="answer-options">
-            <button class="options"></button>
-            <br>
-            <button class="options"></button>
-            <br>
-            <button class="options"></button>
+        <div class="answer-area" id="answer-buttons">
+            <button aria-label="Option 1" class="option" id="option1">Option 1</button>
+            <button aria-label="Option 2" class="option" id="option2">Option 2</button>
+            <button aria-label="Option 3" class="option" id="option3">Option 3</button>            
         </div>
-        <div class="next">
-            <button id="next-btn">Next</button>
+        <div class="controls">            
+            <button aria-label="Next" class="btn-next" id="next">Next</button>
         </div>
+        <!-- score area -->
+        <div id="score-section">
+          <p>Score: <span id="user-score">0</span> / 16</p>
+      </div>
     </section>
 </main>
     <!-- results area -->

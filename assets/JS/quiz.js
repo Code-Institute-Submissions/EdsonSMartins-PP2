@@ -1,7 +1,7 @@
-const questions = [
+let questions = [
     {
         question:"For at least how many years must Irish whiskey be wood-aged?",
-        answer: [
+        options: [
             {text: "3 years", correct: true},
             {text: "7 years", correct: false},
             {text: "10 years", correct: false},
@@ -9,7 +9,7 @@ const questions = [
     },
     {
         question: "Which of the following tool is used by a bartender to measure amounts of liquid precisely?",
-        answer: [
+        options: [
             {text: "A shot", correct: false},
             {text: "A jigger", correct: true},
             {text: "A shaker", correct: false},
@@ -17,7 +17,7 @@ const questions = [
     },
     {
         question: "Which liquor is the main ingredient in the Bloody Mary?",
-        answer: [
+        options: [
             {text: "Rum", correct: false},
             {text: "Tequila", correct: false},
             {text: "Vodka", correct: true},
@@ -25,7 +25,7 @@ const questions = [
     },
     {
         question:"The Long Island Iced Tea consists of gin, triple sec, light rum, tequila, vodka, and a splash of what on top?",
-        answer: [
+        options: [
             {text: "Lemon juice", correct: false},
             {text: "Honey", correct: false},
             {text: "Cola", correct: true},
@@ -33,7 +33,7 @@ const questions = [
     },
     {
         question:"Which bartending technique should we use for any cocktail recipe with mixers?",
-        answer: [
+        options: [
             {text: "Shaking", correct: true},
             {text: "Stirring", correct: false},
             {text: "Straining", correct: false},
@@ -41,7 +41,7 @@ const questions = [
     },
     {
         question: "Which of the following cocktails should be stirred well to combine the added ingredients?",
-        answer: [
+        options: [
             {text: "Manhattan", correct: true},
             {text: "New Orleans Fizz", correct: false},
             {text: "Mai Tai", correct: false},
@@ -49,7 +49,7 @@ const questions = [
     },
     {
         question: "Which of the following liquors is distilled from fruits, especially grapes?",
-        answer: [
+        options: [
             {text: "Vodka", correct: false},
             {text: "Gin", correct: false},
             {text: "Brandy", correct: true},
@@ -57,7 +57,7 @@ const questions = [
     },
     {
         question: "Which of the following cocktails can be ordered dirty or dry?",
-        answer: [
+        options: [
             {text: "Old Fashioned", correct: false},
             {text: "Negroni", correct: false},
             {text: "Martini", correct: true},
@@ -65,7 +65,7 @@ const questions = [
     },
     {
         question: "Which ingredient in the vodka-based drink Cosmopolitan gives it the pink colour?",
-        answer: [
+        options: [
             {text: "Cranberry juice", correct: true},
             {text: "Cherry juice", correct: false},
             {text: "Strawberry juice", correct: false},
@@ -73,7 +73,7 @@ const questions = [
     },
     {
         question: "Which tool can be used by a bartender to crush fruits?",
-        answer: [
+        options: [
             {text: "Jigger", correct: false},
             {text: "Muddler", correct: true},
             {text: "Mister", correct: false},
@@ -81,7 +81,7 @@ const questions = [
     },
     {
         question:"The typical taste of the liqueur Kahlua is quite similar to which popular drink?",
-        answer: [
+        options: [
             {text: "Chocolate", correct: false},
             {text: "Coffee", correct: true},
             {text: "Tea", correct: false},
@@ -89,7 +89,7 @@ const questions = [
     },
     {
         question: "Which of the following is NOT typically found in an Old Fashioned?",
-        answer: [
+        options: [
             {text: "Vermouth", correct: true},
             {text: "Bitters", correct: false},
             {text: "Sugar", correct: false},
@@ -97,7 +97,7 @@ const questions = [
     },
     {
         question:"Which three classic cocktails would you make using a julep strainer?",
-        answer: [
+        options: [
             {text: "Manhattan, Martini, Margarita", correct: false},
             {text: "Martini, Vieux Carré, Negroni", correct: true},
             {text:  "Martini, Old Fashioned, Mint Julep", correct: false},
@@ -105,7 +105,7 @@ const questions = [
     },
     {
         question: "What is the purpose of a dry shake?",
-        answer: [
+        options: [
             {text: "To emulsify egg whites", correct: true},
             {text: "To aerate fresh lime juice", correct: false},
             {text: "To emulsify egg yolks ", correct: false},
@@ -113,7 +113,7 @@ const questions = [
     },
     {
         question:"Which of the following is NOT typically found in an Aperol Spritz?",
-        answer: [
+        options: [
             {text: "Simple Syrup", correct: false},
             {text: "Soda Water", correct: false},
             {text:  "Prosecco", correct: true},
@@ -121,7 +121,7 @@ const questions = [
     },
     {
         question: "What were the main ingredients in Poitín?",
-        answer: [
+        options: [
             {text: "Carrot", correct: false},
             {text: "Potato", correct: true},
             {text: "Beetroot", correct: false},

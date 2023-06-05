@@ -78,7 +78,7 @@ body {
 /* -------------------Game-------------------  */
 
 /* main areas styling */
-.game {
+.username-section {
   background: #f2ab69;
   width: 90%;
   max-width: 600px;
@@ -105,7 +105,7 @@ body {
 }
 
 
-.game h2 {
+.username-section h2 {
   font-size: 25px;
   color: black;
   font-weight: 600;
@@ -176,7 +176,34 @@ body {
   color: #fff;
 }
 
-#next-btn {
+/* styling for quiz area */
+#question-container p {
+  padding: 20px;
+  font-size: 130%;
+  font-weight: 600;
+}
+
+.answer-area button {
+  border: 2px solid #004E98;
+  border-radius: 8px;
+  padding: 10px;
+  width: 60%;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.controls button {
+  border: 2px solid #004E98;
+  border-radius: 8px;
+  padding: 5px;
+  width: 20%;
+  line-height: 20px;
+}
+
+#btn-next {
   background: #001e4d;
   color: #fff;
   font-weight: 500;
@@ -188,6 +215,44 @@ body {
   cursor: pointer;  
 }
 
+#score-section {
+  font-size: 120%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  color: #EBEBEB;
+  padding: 10px;
+}
+
+/* results area  */
+
+#finish p {
+  font-size: 130%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  color: #1F1F1F;
+  padding: 40px;
+  line-height: 30px;
+}
+
+.btn-home {
+  border: 2px solid #004E98;
+  border-radius: 8px;
+  padding: 5px;
+  width: 20%;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+/* check answer function in js file adds these classes */
+.correct-option {
+  background: #34eb8f;
+}
+
+.incorrect-option {
+  background: #fc0404;
+}
 
 
 

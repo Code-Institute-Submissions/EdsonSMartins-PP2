@@ -1,17 +1,20 @@
+
+
 // DOM elements
-let quizArea = document.getElementsByClassName("game");
+let usernameArea = document.getElementsByClassName("username-section");
+let quizArea = document.getElementsByClassName("game-play");
 let resultsArea = document.getElementsByClassName("results");
-let quizPhrase = document.getElementById("questions");
+let quizQuestion = document.getElementById("question");
 let answerButtons = document.getElementById('answer-buttons');
-let currentPhraseIndex = 0;
+let currentQuestionIndex = 0;
 let userScore = 0;
 let score = document.getElementById("user-score");
 
 // function to open quiz area
 function startQuiz() {
-    homeArea[0].classList.add("hide");
+    usernameArea[0].classList.add("hide");
     quizArea[0].classList.remove("hide");
-    currentPhraseIndex = 0;
+    currentQuestionIndex = 0;
     showQuiz();
     userScore = 0;
 }
@@ -24,11 +27,11 @@ function showQuiz() {
     // answer buttons were repeating so the reset function was added
     resetAnswerButtons();
     // displays question number
-    let currentPhrase = phrases[currentPhraseIndex];
-    let phraseNumber = currentPhraseIndex + 1;
-    quizPhrase.innerHTML = phraseNumber + " / 10 - " + currentPhrase.phrase;
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNumber = currentQuestionIndex + 1;
+    quizQuestion.innerHTML = questionNumber + " / 16 - " + currentQuestion.question;
 
-    currentPhrase.options.forEach(options => {
+    currentQuestion.options.forEach(options => {
         //this is to create the answer buttons and include the values
         let button = document.createElement("button");
         button.innerHTML = options.text;
@@ -77,9 +80,9 @@ function incrementScore() {
 
 // repeats the show quiz function if there are questions left
 // if not, it returns the end page with final score
-function nextPhrase() {
-    currentPhraseIndex++;
-    if(currentPhraseIndex < 10){
+function nextQuestion() {
+    currentQuestionIndex++;
+    if(currentQuestionIndex < 16){
         showQuiz();
     } else{
         quizArea[0].classList.add("hide");
@@ -87,7 +90,7 @@ function nextPhrase() {
         let endResult = document.getElementById("end-result");
         let userName = document.getElementById("username");
         let html = `
-        <p>Well done ${userName.value}! You got ${userScore} out of 10 right!
+        <p>Well done ${userName.value}! You got ${userScore} out of 16 right!
         `;
         endResult.innerHTML = html;
     }
@@ -96,8 +99,8 @@ function nextPhrase() {
 // moves on to the next question
 let nextButton = document.getElementById("next");
 nextButton.addEventListener("click", () => {
-    if(currentPhraseIndex < phrases.length){
-        nextPhrase();
+    if(currentQuestionIndex < questions.length){
+        nextQuestion();
     } else {
         startQuiz();
     }
