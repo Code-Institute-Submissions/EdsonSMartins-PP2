@@ -62,14 +62,14 @@
         </div> 
         <div>
           <div id="question-container">
-            <p id="question">Blah blah blank</p>
+            <p id="question">Questions here</p>
         </div>
         <div class="answer-area" id="answer-buttons">
             <button aria-label="Option 1" class="option" id="option1">Option 1</button>
             <button aria-label="Option 2" class="option" id="option2">Option 2</button>
             <button aria-label="Option 3" class="option" id="option3">Option 3</button>            
         </div>
-        <div class="controls">            
+        <div >            
             <button aria-label="Next" class="btn-next" id="next">Next</button>
         </div>
         <!-- score area -->
@@ -79,13 +79,10 @@
     </section>
 </main>
     <!-- results area -->
-    <section class="results-area hide">
-      <header class="header-container">
-          <h1>Finish It!</h1>
-      </header>
+    <section class="results hide">
       <div id="finish">
           <div id="end-result"></div>
-          <button aria-label="Return to home page" onclick="goToHome()" class="btn-home hover ">Home</button>
+          <button aria-label="Return to username section" onclick="playAgain()" class="btn-restart">Play again</button>
       </div>
   </section>
 

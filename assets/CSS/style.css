@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;500&display=swap');
 
 body {
-        font-family: 'Open Sans', serif;
-        font-weight: 400;
+        font-family: 'Open Sans', serif;        
         overflow-x: hidden;
         position: relative;
         background-size: cover;
@@ -15,7 +14,7 @@ body {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -60,7 +59,6 @@ body {
 
 .play,
 .submit,
-.reset,
 .help {
   font-family: 'Open Sans', serif;
   font-size: 1em;
@@ -80,21 +78,20 @@ body {
 /* main areas styling */
 .username-section {
   background: #f2ab69;
-  width: 90%;
-  max-width: 600px;
-  margin: 200px auto;
+  width: 400px;
+  max-width: 80%;
+  margin: 120px auto;
   border-radius: 10px;
-  padding: 60px;
+  padding: 15px;
 }
 
 .game-play,
 .results {
-    width: 600px;
-    max-width: 90%;
-    margin: 200px auto;
+    width: 400px;
+    max-width: 80%;
+    margin: 120px auto;
     background-color: #f2ab69;
     border-radius: 16px;
-    border: 1px solid #004E98;
     position: relative;
     text-align: center;
 }
@@ -116,12 +113,12 @@ body {
 }
 
 .user-input {
-  padding: 10px 0; 
+  padding: 5px auto; 
 }
 
 /*enter button */
 #start-btn {
-  background: #001e4d;
+  background: #071013;
   color: #fff;
   font-weight: 400;
   width: 100px;
@@ -141,28 +138,16 @@ body {
 #username-output {
   font-size: 2rem;
   padding: 5px;
-  color: black;
+  color: #071013;
 }
 
 
-#errors {
-  color: black;
-  background-color: #f2ab69;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px;
-  margin-bottom: 1rem;
-  width: fit-content;
-  display: none;
-}
-
-.options {
-  background: #fff;
-  color: #222;
-  font-weight: 500;
+.option {
+  background: #fbbc74;
+  color: #071013;
+  font-weight: 200;
   width: 50%;
-  border: 1px solid #222 ;
+  border: 1px solid #071013 ;
   padding: 10px;
   margin: 10px 0;
   text-align: left;
@@ -171,43 +156,32 @@ body {
   transition: all 0.3s;
 }
 
-.options:hover {
-  background: #222;
-  color: #fff;
-}
 
 /* styling for quiz area */
 #question-container p {
   padding: 20px;
-  font-size: 130%;
+  font-size: 100%;
   font-weight: 600;
 }
 
 .answer-area button {
-  border: 2px solid #004E98;
+  border: 2px solid #071013;
   border-radius: 8px;
   padding: 10px;
-  width: 60%;
+  width: 90%;
   line-height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 120%;
+  font-size: 100%;
   font-weight: 500;
+  text-align: center;
 }
 
-.controls button {
-  border: 2px solid #004E98;
-  border-radius: 8px;
-  padding: 5px;
-  width: 20%;
-  line-height: 20px;
-}
-
-#btn-next {
-  background: #001e4d;
+.btn-next {
+  background: #071013;
   color: #fff;
   font-weight: 500;
-  width: 100px;
+  width: 80px;
   border: 0;
   padding: 10px;
   margin: 20px auto 0;
@@ -216,12 +190,12 @@ body {
 }
 
 #score-section {
-  font-size: 120%;
-  font-weight: 600;
+  font-size: 100%;
+  font-weight: 500;
   display: flex;
   flex-direction: row;
-  color: #EBEBEB;
-  padding: 10px;
+  color: #FFFFFF;
+  padding: 10px;  
 }
 
 /* results area  */
@@ -234,15 +208,19 @@ body {
   color: #1F1F1F;
   padding: 40px;
   line-height: 30px;
+  
 }
 
-.btn-home {
-  border: 2px solid #004E98;
-  border-radius: 8px;
-  padding: 5px;
-  width: 20%;
-  line-height: 20px;
-  margin-top: 15px;
+.btn-restart {
+  background: #071013;
+  color: #fff;
+  font-weight: 500;
+  width: 80px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* check answer function in js file adds these classes */

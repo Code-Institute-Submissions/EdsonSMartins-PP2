@@ -35,7 +35,7 @@ function showQuiz() {
         //this is to create the answer buttons and include the values
         let button = document.createElement("button");
         button.innerHTML = options.text;
-       button.classList.add("btn");
+       button.classList.add("option");
        answerButtons.appendChild(button);
        button.addEventListener("click", checkAnswer);
        if (options.correct) {
@@ -107,8 +107,8 @@ nextButton.addEventListener("click", () => {
 });
 
 // returns user to home page
-function goToHome() {
-    homeArea[0].classList.remove("hide");
+function playAgain() {
+    usernameArea[0].classList.remove("hide");
     quizArea[0].classList.add("hide");
     resultsArea[0].classList.add("hide");
     score.innerHTML = 0;
