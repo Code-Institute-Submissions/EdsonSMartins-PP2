@@ -8,7 +8,6 @@ body {
 }
 
 
-
 /* -------------------Main page-------------------  */
 .hero{
     height: 100vh;
@@ -24,14 +23,15 @@ body {
 .navbar-brand
 {
   font-family: 'Lobster', sans-serif;
-  font-size: 35px!important;
+  font-size: 30px!important;
   margin: 0px;
 }
 
 /* -------------------Modal-------------------  */
 .modal-header {
-  padding: 3rem 5rem;  
+  padding: 0.5rem 0.5rem; 
 }
+
 .modal-title {
     font-family: 'Lobster', serif;
     font-weight: 500;
@@ -44,12 +44,14 @@ body {
   max-width: 450px;
 }
 
-.modal-header {
-  padding: 0.5rem 0.5rem; 
-}
 
 .modal-body {
   padding: 0.5em;
+  font-size: 0.9em;
+}
+
+.modal-body h2 {
+  font-size: 1.4em;
 }
 
 .modal-header .btn-close {
@@ -58,7 +60,6 @@ body {
 }
 
 .play,
-.submit,
 .help {
   font-family: 'Open Sans', serif;
   font-size: 1em;
