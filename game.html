@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     
     <title>Bartending Quiz</title>
-    <!-- code to launch modal on page load -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
+    
   </head>
   <body class="d-flex flex-column h-100">
     <img class="hero" src="assets/images/bg_img.jpg" alt="bartender working behind the bar">
@@ -44,15 +42,13 @@
 <main>
      <!-- form section for username -->
      <section class="username-section">
-        <h2>Before you start...</h2>
-            <div class="user-input">
-                <label for="username">Please enter a Username:</label> 
-                <br>
-                <input aria-label="Enter username" type="text" name="username" id="username"
-                    placeholder="Username"> 
-                <br>
-                <button aria-label="Start quiz" class="hover" id="start-btn">Start Quiz</button>                
-            </div>
+        <h2>Before you start...</h2>            
+            <form method="post">
+              <label for="username">Please enter a Username:</label><br>               
+              <input aria-label="Enter username" type="text" name="username" id="username" placeholder="Username" required><br>              
+              <button aria-label="Start quiz" type="submit" id="start-btn">Start Quiz</button>
+            </form>                                
+            
     </section>
      <!-- game section with the game -->
   
