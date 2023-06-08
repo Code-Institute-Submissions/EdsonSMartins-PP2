@@ -1,4 +1,4 @@
-import {questions} from './quiz';
+import {questions} from './quiz.js';
 
 // DOM elements
 let usernameArea = document.getElementsByClassName("username-section");
