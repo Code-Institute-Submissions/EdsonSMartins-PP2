@@ -106,10 +106,10 @@ nextButton.addEventListener("click", () => {
     }
 });
 
+// returns user to username page
 let rstButton = document.getElementById("rstbtn");
 rstButton.addEventListener("click", playAgain)
 
-// returns user to home page
 function playAgain() {
     usernameArea[0].classList.remove("hide");
     quizArea[0].classList.add("hide");

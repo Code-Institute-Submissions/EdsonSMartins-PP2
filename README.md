@@ -1,5 +1,8 @@
 # **Bartending Quiz**
 
+![](assets/readme_docs/amiresponsive.PNG)
+
+
 ## **Contents**
 * [Scope](#scope)
 * [User Experience UX](#user-experience-ux)
@@ -69,7 +72,7 @@ Check format:[Colour Palette](https://coolors.co/fbbc74-071013-ffffff-fc0404-34e
 
 ### **Imagery**
 
-The hero image on all pages is a bartender behind the bar sourced from [Unsplash](https://unsplash.com/s/photos/bartending) and it was the main reference to the selection of colors scheme applied on this online quiz.
+The hero image on all pages is a bartender behind the bar sourced from [Unsplash](https://unsplash.com/photos/JWbHgJKx7jA) and it was the main reference to the selection of colors scheme applied on this online quiz.
 
 ### **Wireframes**
 The wireframes were created using [Figma](https://www.figma.com) and can be found in pdf form in [wireframes](documentation/wireframes)
