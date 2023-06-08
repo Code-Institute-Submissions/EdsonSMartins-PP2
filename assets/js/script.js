@@ -116,3 +116,11 @@ function playAgain() {
     resultsArea[0].classList.add("hide");
     score.innerHTML = 0;
 }
+
+//   this function closes the navbar menu when a link is clicked 
+const navLinks = document.querySelectorAll('.nav-link')
+const menuToggle = document.getElementById('navbarNavAltMarkup')
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
