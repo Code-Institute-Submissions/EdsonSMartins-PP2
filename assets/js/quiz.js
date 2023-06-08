@@ -1,4 +1,4 @@
-let questions = [
+export let questions = [
     {
         question:"For at least how many years must Irish whiskey be wood-aged?",
         options: [
