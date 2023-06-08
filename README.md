@@ -1,6 +1,6 @@
 # **Bartending Quiz**
 
-![](assets/readme_docs/amiresponsive.PNG)
+![](documentation/amiresponsive.PNG)
 
 
 ## **Contents**
