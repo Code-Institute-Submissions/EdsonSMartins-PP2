@@ -2,30 +2,39 @@
 
 ![](documentation/amiresponsive.PNG)
 
+[View live site on Github Pages](https://edsonsmartins.github.io/PP2/)
 
 ## **Contents**
-* [Scope](#scope)
-* [User Experience UX](#user-experience-ux)
-    * [User Stories](#user-stories)
-    * [Site Owner Goals](#site-owner-goals)
-* [Design Choices](#design-choices)
-    * [Fonts](#fonts)
-    * [Colours](#colours)
-    * [Wireframes](#wireframes)
+* [**Scope**](#scope)  
+* [**User Experience UX**](#user-experience-ux)
+    * [**User Stories**](#user-stories)
+    * [**Site Owner Goals**](#site-owner-goals)
+* [**Design Choices**](#design-choices)
+    * [**Fonts**](#fonts)
+    * [**Colours**](#colours)
+    * [**Wireframes**](#wireframes)
+* [**Technologies**](#technologies)
+    * [**Languages**](#languages)
+    * [**Libraries**](#libraries)
+    * [**Frameworks \& Tools**](#frameworks--tools)
+* [**Features**](#features)
+    * [**Features Implemented**](#features-implemented)
+    * [**Future Features**](#future-features)
+* [**Version Control**](#version-control)
+    * [**Gitpod Workspaces**](#gitpod-workspaces)
+    * [**Gitpod branching and committing to GitHub**](#gitpod-branching-and-committing-to-GitHub)
+* [**Testing**](#testing)
+* [**Deployment**](#deployment)
+* [**Development**](#development)
+* [**Credits**](#credits)
 
+Credits
 ## **Scope**
-The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. Users can to test their knowledge of Bartending by playing an online quiz. The features include creating a username, tracking the score and a countdown timer. 
+The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. Users can to test their knowledge of Bartending by playing an online quiz. The features include creating a username and tracking the score.
 
 [Back to contents](#contents)
 
 ## **User Experience UX**
-
-#### Key information for the site
-
-- Home page with instructions
-- Username function
-- Quiz navigation
-- Result/feedback on completion
 
 ### **User Stories**
 
