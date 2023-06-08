@@ -29,23 +29,19 @@ The Scope of this project is creating a website with the HTML,CSS and JavaScript
 - As a First Time User
     - I want to see the name of the quiz application.
     - I want to find instructions on how to play the game. 
-    - I want to see a timer that shows how much time is left to play the game. 
     - I want to see the questions and three answer options.
     - I want to see my score at the end of the game.
 
 
 -  As a user returning to the site:
    - I want to be able to do the quiz multiple times to get different results and see improvements while learning more about bartending.
-   - I want to save my results.
-   - I want to compare my results with others. 
 
 
 - User Goals 
     - I want the site to be easy to navigate on mobile primarily so I can complete it on the go.
-    - I want to be able to enter a username of my choice. 
-    - I want to see the remaining time.* 
+    - I want to be able to enter a username of my choice.     
     - I want to put my bartending knowledge to be tested with help of multiple choice.
-    - I want to be able to contact the site owner with feedback* 
+     
 
 [Back to contents](#contents)
 
