@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: black;
+    background-color: #071013;
 }
 
 .navbar-brand
@@ -112,9 +112,9 @@ body {
 
 .username-section h2 {
   font-size: 1.7em;
-  color: black;
+  color: #071013;
   font-weight: 500;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #071013;
   padding-bottom: 30px;
   padding-top: 30px;
 

@@ -59,11 +59,11 @@ The Fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and 
 [Back to contents](#contents)
 
 ### **Colours**
-The idea behind the main colours was to use the match with the colours on the background image. Light orange to contrast and promote ease reading in contrast with white and black.
+The idea behind the main colours was to use the match with the colours on the background image. Light orange to contrast and promote ease reading in contrast with white and black. The colors red and green appears during the game to identify which questions selected are correct or wrong.
 
-![Colour Palette](documentation/palette.png)
+![Colour Palette](assets/images/palette.png)
 
-Check format:[Colour Palette](https://coolors.co/f2ab69-772f1a)
+Check format:[Colour Palette](https://coolors.co/fbbc74-071013-ffffff-fc0404-34eb8f)
 
 [Back to contents](#contents)
 
