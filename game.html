@@ -9,8 +9,7 @@
     <!--https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script defer src="assets/js/script.js" type="module"></script>
-    
+        
     <link rel="stylesheet" href="assets/css/style.css">
     
     <title>Bartending Quiz</title>
@@ -38,6 +37,7 @@
       </div>
     </div>
   </nav>
+</header>
 <main>
      <!-- form section for username -->
      <section class="username-section">
@@ -46,40 +46,37 @@
               <label for="username">Please enter a Username:</label><br>               
               <input aria-label="Enter username" type="text" id="username" placeholder="Username" required><br>              
               <button aria-label="Start quiz" type="submit" id="start-btn" class="btn-start">Start Quiz</button>
-            </div>                                
-            
-    </section>
-     <!-- game section with the game -->
-  
-     <section class="game-play hide">        
-        <div id="timer">
-            <!-- the timer will be displayed using js -->
-        </div> 
+            </div>           
+     </section>
+
+     <!-- game section with the game -->  
+     <div class="game-play hide">        
         <div>
           <div id="question-container">
             <p id="question">Questions here</p>
-        </div>
-        <div class="answer-area" id="answer-buttons">
+          </div>
+          <div class="answer-area" id="answer-buttons">
             <button aria-label="Option 1" class="option" id="option1">Option 1</button>
             <button aria-label="Option 2" class="option" id="option2">Option 2</button>
             <button aria-label="Option 3" class="option" id="option3">Option 3</button>            
-        </div>
-        <div >            
+          </div>
+          <div >            
             <button aria-label="Next" class="btn-next" id="next">Next</button>
-        </div>
+          </div>
         <!-- score area -->
-        <div id="score-section">
+          <div id="score-section">
           <p>Score: <span id="user-score">0</span> / 16</p>
+          </div>
+        </div>  
       </div>
-    </section>
 </main>
     <!-- results area -->
-    <section class="results hide">
+  <div class="results hide">
       <div id="finish">
           <div id="end-result"></div>
           <button aria-label="Return to username section" id="rstbtn" class="btn-restart">Play again</button>
       </div>
-  </section>
+    </div>
 
 
 <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="modalLabel2" tabindex="-1">
@@ -92,20 +89,20 @@
           <div class="modal-body">
             <h2>How to play Bartending Quiz!</h2>
             <ul>
-                <li>Firstly you will be asked to enter a username.Choose any name that you desire;</li>
-                <li>Press Play! and a timer will start. </li>
-                <li>You have to choose which of the <strong>3</strong> given options is the right answer to the question given. </li>
-                <li>Choose your answer by clicking on it!</li>                
+              <li>Firstly you will be asked to enter a username. Choose any name that you desire.</li>
+              <li>You have to choose which of the <strong>3</strong> given options is the right answer to the question given.</li>
+              <li>Choose your answer by clicking on it.</li>
+              <li>Check your results at the end of the quiz.</li>                
             </ul>           
         </div>
           <div class="modal-footer">
-              <a data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-light " class="btn btn-secondary play">PLAY</a>
+              <a data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal" class="btn btn-secondary play align-items-center">PLAY</a>
           </div>
       </div>
   </div>
 </div>
 
 
-
+<script src="assets/js/script.js" type="module"></script>
   </body>
 </html>

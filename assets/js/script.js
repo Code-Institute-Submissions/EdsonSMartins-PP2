@@ -20,7 +20,7 @@ function startQuiz() {
 }
 
 let startButton = document.getElementById("start-btn");
-startButton.addEventListener("click", startQuiz)
+startButton.addEventListener("click", startQuiz);
 
 // function to show quiz questions
 function showQuiz() {
@@ -40,7 +40,7 @@ function showQuiz() {
        button.addEventListener("click", checkAnswer);
        if (options.correct) {
            button.dataset.correct = options.correct;
-       };
+       }
     });
 }
 
@@ -108,7 +108,7 @@ nextButton.addEventListener("click", () => {
 
 // returns user to username page
 let rstButton = document.getElementById("rstbtn");
-rstButton.addEventListener("click", playAgain)
+rstButton.addEventListener("click", playAgain);
 
 function playAgain() {
     usernameArea[0].classList.remove("hide");
@@ -118,9 +118,9 @@ function playAgain() {
 }
 
 //   this function closes the navbar menu when a link is clicked 
-const navLinks = document.querySelectorAll('.nav-link')
-const menuToggle = document.getElementById('navbarNavAltMarkup')
-const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+const navLinks = document.querySelectorAll('.nav-link');
+const menuToggle = document.getElementById('navbarNavAltMarkup');
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
 navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
+    l.addEventListener('click', () => { bsCollapse.toggle(); });
+});
