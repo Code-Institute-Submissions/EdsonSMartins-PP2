@@ -242,6 +242,16 @@ The *script.js* and *quiz.js* were both tested in [JSHint](https://jshint.com/) 
 
 [Back to contents](#contents)
 
+### **Bugs**
+ 1. Modal on page load was within script.js file however i could not find an alternative to set it to load only on index.html. This was solved with Jquery added on index.html.
+ 2. Navbar drop menu was not auto closing and this was solved adding some javascript as advised on slack comunity and along with some online tutorial videos.
+ 
+### Known Bugs
+ 1. Username was intended to be required.
+ 2. Next button should be hided until an option is selected.
+ 3. Start quiz button has an issue on its function which is not reading the addEventListener properly. I have tried a couple of different approaches but could not find a solution. 
+
+
 ## **Deployment**
 Github Pages was used to deploy the website. The instructions to achieve this are:
 
@@ -271,10 +281,20 @@ For local development the project repository can be found on GitHub.
 ## **Credits**
 
 ### **Code**
+ - CodeInstitute Full Stack Developer Course
+ - Website/videos tutorial for quiz base:
+    - [Game Dev Academy](https://gamedevacademy.org/javascript-quiz-tutorial/)
+    - [Easy Tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+ - Show modal on page load:
+    - [Students tutorial](https://www.studentstutorial.com/jquery/jquery-show_hide_bootstarp_modal.php)
 
 ### **Content**
+ - Content was taken from existing bartending quiz [We Love quizzes](https://www.welovequizzes.com/bartending-quiz-questions-and-answers/)
 
 ### **Images**
-
-  ### **Acknowledgments**
-
+ - The image was sourced from [Unsplash](https://unsplash.com/photos/JWbHgJKx7jA)
+  
+### **Acknowledgments**
+ - My wife for always boosting my confidence, support and patience.
+ - My Mentor for being really helpful while guiding me through the project.
+ - All friends and family for testing the site and giving feedback.
