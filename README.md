@@ -30,7 +30,7 @@
 
 Credits
 ## **Scope**
-The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. Users can to test their knowledge of Bartending by playing an online quiz. The features include creating a username and tracking the score.
+The Scope of this project is creating a website with the HTML,CSS and JavaScript framework. Users can test their knowledge of Bartending by playing an online quiz. The features include creating a username, colors to support the correct/incorrect answers, tracking the score and feedback.
 
 [Back to contents](#contents)
 
@@ -104,7 +104,6 @@ The wireframes were created using [Figma](https://www.figma.com) and can be foun
 
 ## **Technologies**
 
-
 ### **Languages**
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -119,9 +118,9 @@ The wireframes were created using [Figma](https://www.figma.com) and can be foun
 ### **Libraries**
 
 - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-    - Used to design a mobile-first responsive website layout along with custom components (navbar, modal and form). 
-- [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery) 
-    - Used as click event listeners when each answer clicked to generate next question and also play a sound. Also used Bootstrap collapse for navbar on mobile and tablet view
+    - Used to implement components (navbar and modal) and for better mobile responsiveness. 
+- [jQuery](https://jquery.com/) 
+    - Used as click launch modal when load page.
 
 [Back to contents](#contents)
 
@@ -149,7 +148,40 @@ The wireframes were created using [Figma](https://www.figma.com) and can be foun
 
 ### **Features Implemented**
 
+The website has two pages with the following features: 
+
+- **Header**
+  - Contains a fixed and transparent navigation bar with Quiz name on left side which leads to home page and sections of the page listed on the right side.
+  - On mobile view the navigation links collapse in to a toggle button and the menu closes after a link is pressed to avoid the user having to close the menu afterwards and to promote a easier user experience.     
+
+- **Hero sections**
+  - The same backgroung image is replicated on all pages to bring a sense of familiarity when browsing. 
+  
+
+#### *index.html*
+ - **Modal**
+   - The modal launches on page load and welcome the user giving the options to click to play the game or to the click and access intructions. The instructions is also designed in a modal format describing to the user how to play the quiz and has a link to game.html so users can imediately start the game. In case the modal is closed, user can still navigate by using the navigation bar in order to access the game, help and home. 
+
+#### *game.html*
+ - **Questions and Answers section**
+    - The quiz section is loaded to game.html from the script.js file. The questions are exported from quiz.js and then imported and accessed by script.js to display on game.html.
+    - Each question is followed by three options for the user to choose. If the right or wrong answer is selected, the user is presented with the correct answer.
+    - A counter can be found right after the next button to show how many the user has gotten right.
+
+ - **Results**
+    - The results section is revealed once all of the questions have been asked and shows a feedback message and the total number of correct answers the user has gotten. To encourage users to keep playing, in this section users can click use a link to the game.html and the game reloaded from the start.
+
 ### **Future Features**
+  - Timer
+    - by implementing a timer, users will have to focus on each question avaiding wasting time and this could also reduce the chances of cheating while playing the quiz.
+  - Leaderboard
+    - this feature will estimulate users to invite friends to play the game and compete with them.
+  - Age control
+    - this tool is to be implemented to select and allow only users within the drinking age to be able to play the game. Perhaps those under the minimum drinking age, would be directed to a quiz suitable to their age.
+  
+
+
+[Back to contents](#contents)
 
 ## **Version Control**
 
@@ -168,6 +200,10 @@ The wireframes were created using [Figma](https://www.figma.com) and can be foun
 
 ## **Testing**
 
+
+
+[Back to contents](#contents)
+
 ## **Deployment**
 Github Pages was used to deploy the website. The instructions to achieve this are:
 
@@ -179,6 +215,8 @@ Github Pages was used to deploy the website. The instructions to achieve this ar
 6. Click Save. Your live Github Pages site will be deployed at the URL shown.
 
 You can find the deployed site [here]
+
+[Back to contents](#contents)
 
 ## **Development**
 For local development the project repository can be found on GitHub.
