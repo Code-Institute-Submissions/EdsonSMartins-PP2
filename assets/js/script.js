@@ -19,7 +19,7 @@ function startQuiz() {
     userScore = 0;
 }
 
-let startButton = document.getElementById("start-btn");
+let startButton = document.getElementById("startbtn");
 startButton.addEventListener("click", startQuiz);
 
 // function to show quiz questions

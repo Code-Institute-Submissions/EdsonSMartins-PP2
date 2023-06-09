@@ -180,7 +180,6 @@ The website has two pages with the following features:
     - this tool is to be implemented to select and allow only users within the drinking age to be able to play the game. Perhaps those under the minimum drinking age, would be directed to a quiz suitable to their age.
   
 
-
 [Back to contents](#contents)
 
 ## **Version Control**
@@ -200,7 +199,46 @@ The website has two pages with the following features:
 
 ## **Testing**
 
+- As a First Time User
+    - I want to see the name of the quiz application.
+    ![Usertest1](documentation/testing/usertest1.PNG) 
+    - I want to find instructions on how to play the game.
+    ![Usertest2](documentation/testing/usertest2.PNG)  
+    - I want to see the questions and three answer options.
+    ![Usertest3](documentation/testing/usertest3.PNG)
+    - I want to see my score at the end of the game.
+    ![Usertest4](documentation/testing/usertest4.PNG)
 
+-  As a user returning to the site:
+   - I want to be able to do the quiz multiple times to get different results and see improvements while learning more about bartending.
+   ![Usertest5](documentation/testing/usertest5.PNG)
+  
+### **Lighthouse**
+To test the performance, accessibility, best practices and SEO of the website, the Google developer tool Lighthouse was used. 
+
+* ![Mobile](documentation/testing/lighthousemobile.PNG)
+* ![Desktop](documentation/testing/lighthousedesktop.PNG)
+
+[Back to contents](#contents)
+
+### **Validation**
+**W3C Validator**
+
+* [index.html]
+
+![W3C html](documentation/testing/w3cindexhtml.PNG)
+
+* [game.html]
+
+![W3C html](documentation/testing/w3cgamehtml.PNG)
+
+* [style.css]
+
+![W3C css](documentation/testing/w3cstylecss.PNG)
+
+**JSHint**
+
+The *script.js* and *quiz.js* were both tested in [JSHint](https://jshint.com/) and no errors were found. 
 
 [Back to contents](#contents)
 
@@ -231,3 +269,12 @@ For local development the project repository can be found on GitHub.
 [Back to contents](#contents)
 
 ## **Credits**
+
+### **Code**
+
+### **Content**
+
+### **Images**
+
+  ### **Acknowledgments**
+
